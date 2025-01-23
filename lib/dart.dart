@@ -3,6 +3,9 @@ int calculate() {
 }
 
 void user() {
+  int idade = 34;
   String name = "Hello World";
+
   print(name);
+  print(idade);
 }
