@@ -30,3 +30,5 @@ void user({required String name, required int idade}) {
 exemploFunction() {
   print("Apenas um exemplo de função em uma variável.");
 }
+
+typedef newFunction = void Function(int idade);
