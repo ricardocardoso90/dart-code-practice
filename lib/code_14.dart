@@ -2,6 +2,10 @@ void main() {
   var cor = "Black";
   final corEdit = cor.toLowerCase();
 
+  var corEditEnum = Cores.vermelho;
+  print(corEditEnum.name);
+  print(" ");
+
   corEdit == "black"
       ? print("A cor é a correta")
       : print("A cor não é a correta");
@@ -11,6 +15,8 @@ void main() {
   final user = {
     "name": "Ricardo",
     "idade": 34,
+    "jogo_preferido": "Dark Souls",
+    "linguagem_preferida": "JavaScript",
   };
 
   user.forEach((key, value) => print("$key: $value"));
