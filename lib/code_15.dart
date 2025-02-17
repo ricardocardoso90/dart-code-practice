@@ -16,7 +16,7 @@ void main() {
   print(Camiseta.nomeCompleto);
   print(" ");
 
-  final newUser = User("Teste_de_Nome", "Teste_de_Sobrenome", 34);
+  final newUser = User(nome: "Nome", sobrenome: "Sobrenome", idade: 34);
   print("Seu nome e sobrenome são: ${newUser.nome} ${newUser.sobrenome}!!");
 }
 
