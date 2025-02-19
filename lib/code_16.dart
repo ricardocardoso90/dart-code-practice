@@ -1,7 +1,4 @@
 void main() {
-  final newUser = User(nome: "Ricardo", sobrenome: "Cardoso", idade: 34);
-  print("Seu nome e sobrenome são: ${newUser.nome} ${newUser.sobrenome}.");
-
   final dog = Animal("Meg", 10);
   print("A ${dog.nome} tem ${dog.idade} anos e pesa ${dog.peso} Kilos.");
   print(" ");
@@ -15,7 +12,14 @@ void main() {
   print(" ");
 
   final passarinho = Passaro("Beija-flor", 8);
-  print("O nome do passarinho é: ${passarinho.nome}!!");
+  print("O nome do passarinho é: ${passarinho.nome}.");
+  print("");
+
+  final passaro = Passaro("João de Barro", 17);
+  passaro.cantar();
+
+  final newUser = User(nome: "Ricardo", sobrenome: "Cardoso", idade: 34);
+  print("Seu nome e sobrenome são: ${newUser.nome} ${newUser.sobrenome}.");
 }
 
 class Animal {
@@ -29,6 +33,10 @@ class Animal {
 
   String? latir() {
     print("$nome latiu.");
+  }
+
+  String? cantar() {
+    print("$nome cantou.");
   }
 
   Animal(this.nome, this.idade);
