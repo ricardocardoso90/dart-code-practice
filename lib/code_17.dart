@@ -6,9 +6,6 @@ void main() {
   print("A ${newDog.nome} tem ${newDog.idade} anos e pesa ${newDog.peso} Kg.");
 
   var animais = <Animal>[Meg("Meg", 10, 17.5), Magali("Magali", 8, 13.9)];
-  for (var animal in animais) {
-    // animal.latir();
-  }
 
   final carro = Carro("Carro", 70.5);
   carro.velocidadeMaxima();
