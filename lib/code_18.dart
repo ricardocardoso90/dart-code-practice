@@ -2,7 +2,7 @@ void main() {
   final curso = Cursos(data: 2025, nome: "B7Web", valor: 99.99);
   print("O nome do curso que vou cursar em ${curso.data} é: ${curso.nome}.");
 
-  final nomes = ["Ricardo", "Moniky", "Letícia"];
+  final nomes = ["Ricardo", "Cardoso", "Santos"];
 
   final pessoas = nomes.map((nome) => Pessoa(nome)).toList();
   for (var pessoa in pessoas) {
@@ -18,6 +18,7 @@ class Cursos {
   const Cursos({required this.data, this.nome, this.valor});
 }
 
+@override
 class Pessoa {
   String nome;
 
