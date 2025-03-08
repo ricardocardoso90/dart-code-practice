@@ -1,13 +1,15 @@
 import 'dart:async';
-import 'dart:io';
 
 void main() {
-  print("Seu nome é: $name!");
+  getGame("Dark Souls");
 
   Timer.run(() => print("Run: Hello, $name!"));
   Timer(Duration(seconds: 3), () => print("Duration: Hello, $name!"));
 
-  getGame("Dark Souls");
+  Future(() => throw Exception("Erro ao buscar o jogo!"))
+      .then((value) => print("then: Hello, $value!"))
+      .catchError((error) => print("catchError: $error"), test: (error) => true)
+      .whenComplete(() => print("whenComplete: Tudo deu certo, $name!"));
 }
 
 const name = "Ricardo";
